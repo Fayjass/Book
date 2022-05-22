@@ -109,7 +109,7 @@ export default function Definition({ navigation }) {
         source={require("../../../images/chinaCoins.jpg")}
       />
 
-      <Text style={styles.text}>Посмотри в будущее</Text>
+      <Text style={styles.text}>text</Text>
 
       {result6 < 7 ? (
         <View>
@@ -126,7 +126,7 @@ export default function Definition({ navigation }) {
       ) : (
         <View>
           <TouchableOpacity onPress={loadSceneResult}>
-            <Text style={styles.text}>Ответ из Книги Перемен</Text>
+            <Text style={styles.text}>text</Text>
           </TouchableOpacity>
         </View>
       )}

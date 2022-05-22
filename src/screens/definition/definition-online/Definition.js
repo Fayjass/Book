@@ -26,8 +26,6 @@ export default function Definition({ navigation }) {
     navigation.navigate("Ответ из Книги Перемен", { answers });
   };
 
-  // 3 бросаемые монетки, completed - false -монетка не брошена
-
   const img = require("../../../images/chinaCoins.jpg");
   const [coins, setCoins] = useState([
     { id: 1, title: "1", completed: false, img: "img" },
@@ -35,12 +33,7 @@ export default function Definition({ navigation }) {
     { id: 3, title: "3", completed: false, img: "img" },
   ]);
 
-  // Шесть попыток бросков 3-х монеток
   const tries = new Array(6).fill().map((_, i) => i);
-
-  // Выполняется при нажатии кнопки "монетка"
-  // Кнопке дается статус "ОРЕЛ" или "РЕШКА"
-  // Меняется состояние  completed - получила статус
 
   function toggleCoinsHandler(id, card, tri) {
     setCoins(
@@ -53,13 +46,13 @@ export default function Definition({ navigation }) {
                 completed: true,
                 title: "ОРЕЛ",
               };
-              // Считаем число брошенных монеток в одной попытке
+
               setCount3((count3) => count3 + 1);
             } else {
               button = {
                 id: id,
                 completed: true,
-                title: "РЕШКА",
+                title: "text",
               };
             }
           }
@@ -70,7 +63,6 @@ export default function Definition({ navigation }) {
   }
 
   function clearHandler() {
-    // Возврат состояния монеток к первичному состоянию
     if (count3 >= 2) {
       setAnswers((answers) => answers.concat("1"));
     } else {
@@ -89,7 +81,7 @@ export default function Definition({ navigation }) {
   return (
     <View>
       <Text style={styles.text} onPress={() => setIsModalWindow(true)}>
-        Как гадать ?
+        text
       </Text>
       <View style={gStyle.main}>
         <Modal visible={isModalWindow}>

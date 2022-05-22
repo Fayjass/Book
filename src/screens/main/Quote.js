@@ -4,12 +4,8 @@ import { StyleSheet, Text, View } from "react-native";
 export default function Quote() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>
-        «Если бы мне удалось продлить жизнь, то я отдал бы пятьдесят лет на
-        изучение Перемен, и тогда бы смог не совершать ошибок» (Беседы и
-        суждения 7,16).
-      </Text>
-      <Text style={styles.nameQuote}>Конфуций</Text>
+      <Text style={styles.text}>text</Text>
+      <Text style={styles.nameQuote}>уций<text/Text>
     </View>
   );
 }

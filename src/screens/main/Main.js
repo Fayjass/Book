@@ -8,11 +8,11 @@ import Quote from "../main/Quote";
 
 export default function Main({ navigation }) {
   const loadSceneBook = () => {
-    navigation.navigate("Всё о книге перемен");
+    navigation.navigate("text1");
   };
 
   const loadSceneDefinition = () => {
-    navigation.navigate("Гадание");
+    navigation.navigate("text2");
   };
 
   return (
@@ -22,11 +22,11 @@ export default function Main({ navigation }) {
       <Quote />
 
       <TouchableOpacity onPress={loadSceneBook}>
-        <Text style={styles.text}>Узнай о книге перемен</Text>
+        <Text style={styles.text}>text1</Text>
       </TouchableOpacity>
 
       <TouchableOpacity onPress={loadSceneDefinition}>
-        <Text style={styles.text}>Начни гадание</Text>
+        <Text style={styles.text}>text2</Text>
         <Image
           source={require("../../images/chinaCoins.jpg")}
           style={styles.img}

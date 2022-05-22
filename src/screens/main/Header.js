@@ -5,7 +5,7 @@ import { gStyle } from "../../styles/styles";
 export default function Header() {
   return (
     <View>
-      <Text style={gStyle.title}>КНИГА ПЕРЕМЕН</Text>
+      <Text style={gStyle.title}>TEXT</Text>
     </View>
   );
 }

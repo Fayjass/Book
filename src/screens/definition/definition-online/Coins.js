@@ -10,7 +10,7 @@ export default function Coins(props) {
 
   return (
     <View>
-      <Text>Поочередно нажмите на монетки</Text>
+      <Text>text</Text>
 
       <FlatList
         data={cards}
